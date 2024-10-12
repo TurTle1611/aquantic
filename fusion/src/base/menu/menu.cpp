@@ -39,7 +39,7 @@ void Menu::ToggleButton(const char* format, bool* value)
 	}
 
 	float offsetX = 8;
-	float offsetY = 3;
+	float offsetY = 3; //
 
 	draw_list->AddRectFilled(ImVec2(p.x + offsetX, p.y + offsetY), ImVec2(p.x + width + offsetX, p.y + height + offsetY), col_bg, height * 0.5f);
 	draw_list->AddCircleFilled(ImVec2(*value ? (p.x + width - radius + offsetX) : (p.x + radius + offsetX), p.y + radius + offsetY), radius - 1.5f, col_circle);
