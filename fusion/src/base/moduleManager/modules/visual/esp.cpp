@@ -243,8 +243,9 @@ void Esp::RenderMenu()
 		ImGui::SetCursorPosY(ImGui::GetCursorPosY() + 5);
 		ImGui::Separator();
 		Menu::DoToggleButtonStuff(23445, "Show Healthbar", &Esp::HealthBar);
+		Menu::DoToggleButtonStuff(23125, "Show Box", &Esp::Box);
+		Menu::DoToggleButtonStuff(23525, "Show FilledBox", &Esp::FilledBox);
 		Menu::DoToggleButtonStuff(34576, "Show Text", &Esp::Text);
-		Menu::DoSliderStuff(34875, "Fade Distance", &Esp::FadeDistance, 0, 10);
 		Menu::DoSliderStuff(128763, "Text Size", &Esp::TextSize, 12, 24);
 
 		ImGui::ColorEdit4("Box color", (float*)BoxColor);

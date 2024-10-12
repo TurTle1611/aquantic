@@ -28,7 +28,7 @@ struct Esp
 	inline static float SecondFilledBoxColor[3]{ 0, 0, 0 };
 	inline static float FilledBoxOpacity = 0.15f;
 
-	inline static bool Outline = true;
+	inline static bool Outline = false;
 	inline static float OutlineColor[4]{ 0, 0, 0, 0.25 };
 
 	inline static bool Text = true;

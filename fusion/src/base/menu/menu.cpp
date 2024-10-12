@@ -90,14 +90,6 @@ void Menu::DoToggleButtonStuff(int id, const char* text, bool* bruh) {
 
 void Menu::GlitchText(const char* text, ImVec2 pos)
 {
-	// Red Text
-	ImVec2 pos_one = ImVec2(pos.x - (1 + (rand() % 3)), pos.y - (rand() % 2));
-	ImGui::GetWindowDrawList()->AddText(Menu::FontBold, 28, pos_one, ImColor(235, 5, 90, 100 + (rand() % 60)), text);
-
-	// Cyan Text;
-	ImVec2 pos_two = ImVec2(pos.x + (1 + (rand() % 3)), pos.y + (rand() % 2));
-	ImGui::GetWindowDrawList()->AddText(Menu::FontBold, 28, pos_two, ImColor(32, 217, 217, 100 + (rand() % 60)), text);
-
 	// Real Text
 	ImGui::GetWindowDrawList()->AddText(Menu::FontBold, 28, pos, ImColor(255, 255, 255), text);
 }
